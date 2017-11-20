@@ -32,7 +32,7 @@ body {
         height:1028px;
     }
     height: 100%;
-    background: /*url(../../img/pic-2.PNG) top center,*/ url(../../img/pic-1.PNG) center 1106px, url(../../img/fon.png) center 2080px, url(../../img/map.png) center 5662px;
+    background: /*url(../../img/pic-2.PNG) top center,*/ url(../../img/pic-1.PNG) center 1106px, url(../../img/fon.png) center 2080px;
     background-repeat: no-repeat;
     
     margin:0;
@@ -382,9 +382,21 @@ body {
                     }
             }
         }
+        footer {
+        position: relative;
+        top:2000px;
+        padding:0 0 20px 0;
+        
+        .containerMap {
+            padding:0!important;
+            overflow:hidden;
+        }
+        p {
+            color: @colorBrd2;
+        }
         div.rowThirteen {
             position:relative;
-            top:2600px;
+            top:90px;
             div.buttomLogo>a {
                 display:block;
                 color:transparent;
@@ -416,14 +428,13 @@ body {
 
         
     }
-    footer {
-        position: relative;
-        top:2630px;
-        padding:30px 0 20px 0;
-        border-top:1px solid @colorBrd2;
-        p {
-            color: @colorBrd2;
-        }
+            div.rowLast {
+                position: relative;
+                top: 120px;
+                border-top:1px solid @colorBrd2;
+                padding-top:30px;
+            }
+    
     }
 }
 
@@ -546,16 +557,12 @@ button[type="submit"]#but1{
     border-radius:25px;
 }
 .bottomForm>label {
-    top: 10px;
-    font-size: 1.3em;
-    font-weight: 100;
-    padding: 0;
-    left: 15px;
-    color: rgba(74, 79, 85, 0.65);
-    position: relative;
+    
 }
 .bottomForm>input {
-    margin-top: 5px;
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-top: 10px;
     width: 50%;
     margin-left:20px;
     &:focus {
@@ -789,7 +796,7 @@ div.transp3 {
         display:none;
     }
     body {
-        background: url(../../img/pic-1.PNG) center 50px, url(../../img/map.png) center 4560px, url(../../img/fon.png) center 1254px;
+        background: url(../../img/pic-1.PNG) center 50px, url(../../img/fon.png) center 1254px;
         background-repeat:no-repeat;
     }
     body .container div.rowFirst nav {
@@ -1010,30 +1017,29 @@ div.transp3 {
             top:1490px!important;
         }
         .rowMap {
-            position: relative;
-            top:1540px;
-            img {
-                max-width:100%;
-            }
-        }
-        .rowThirteen {
-            top:1560px!important;
-            div.buttomLogo > a {
-                background: url(../../img/pic-4.png) top center no-repeat transparent !important;
-                background-size: contain !important;
-                min-height: 100px!important;
-
-            }
-            div>p.text-right {
-                text-align:center!important;
-            }
-            div.bottomForm {
-                float:none!important;
-                margin:0 auto;
-            }
+            
         }
         footer {
-            top:1590px!important;
+            top:1540px!important;
+            .rowThirteen {
+                top:30px!important;
+                div.buttomLogo > a {
+                    background: url(../../img/pic-4.png) top center no-repeat transparent !important;
+                    background-size: contain !important;
+                    min-height: 100px!important;
+
+                }
+                div>p.text-right {
+                    text-align:center!important;
+                }
+                div.bottomForm {
+                    float:none!important;
+                    margin:0 auto;
+                }
+            }
+            .rowLast {
+                top:70px!important;
+            }
         }
     }
    .phoneAndLang>div.pull-left {
@@ -1170,25 +1176,24 @@ div.transp3 {
             top:1000px!important;
         }
         .rowMap {
-            position: relative;
-            top:1050px;
-            img {
-                max-width:100%;
-            }
-        }
-        .rowThirteen {
-            top:1070px!important;
-            div.buttomLogo > a {
-                background: url(../../img/pic-4.png) top center no-repeat transparent !important;
-                background-size: cover !important;
-                min-height: 60px!important;
-            }
-            p.text-right {
-                text-align:center!important;
-            }
+            
         }
         footer {
-            top:1110px!important;
+            top:1050px!important;
+            .rowThirteen {
+                top:40px!important;
+                div.buttomLogo > a {
+                    background: url(../../img/pic-4.png) top center no-repeat transparent !important;
+                    background-size: cover !important;
+                    min-height: 60px!important;
+                }
+                p.text-right {
+                    text-align:center!important;
+                }
+            }
+            .rowLast {
+                top:80px!important;
+            }
         }
     }
    .phoneAndLang>div.pull-left {

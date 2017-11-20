@@ -20,7 +20,7 @@
 body {
   position: relative;
   height: 100%;
-  background: url(../../img/pic-1.PNG) center 1106px, url(../../img/fon.png) center 2080px, url(../../img/map.png) center 5662px;
+  background: url(../../img/pic-1.PNG) center 1106px, url(../../img/fon.png) center 2080px;
   background-repeat: no-repeat;
   margin: 0;
 }
@@ -358,43 +358,52 @@ body div.rowTwelv button:hover {
   border: 2px solid rgba(203, 167, 64, 0.94);
   transition-duration: 1s;
 }
-body div.rowThirteen {
+body footer {
   position: relative;
-  top: 2600px;
+  top: 2000px;
+  padding: 0 0 20px 0;
 }
-body div.rowThirteen div.buttomLogo > a {
+body footer .containerMap {
+  padding: 0!important;
+  overflow: hidden;
+}
+body footer p {
+  color: #b9b8bd;
+}
+body footer div.rowThirteen {
+  position: relative;
+  top: 90px;
+}
+body footer div.rowThirteen div.buttomLogo > a {
   display: block;
   color: transparent;
   background: url(../../img/pic-4.png) top left no-repeat transparent;
   min-height: 150px;
   background-size: contain;
 }
-body div.rowThirteen p {
+body footer div.rowThirteen p {
   color: rgba(74, 79, 85, 0.9);
 }
-body div.rowThirteen span.socIcon {
+body footer div.rowThirteen span.socIcon {
   color: #b9b8bd;
   font-size: 1.4em;
 }
-body div.rowThirteen span.socIcon:hover {
+body footer div.rowThirteen span.socIcon:hover {
   color: #d0af50;
   cursor: pointer;
 }
-body div.rowThirteen button#but1 {
+body footer div.rowThirteen button#but1 {
   color: #b9b8bd !important;
 }
-body div.rowThirteen button#but1:hover > span.iconAr {
+body footer div.rowThirteen button#but1:hover > span.iconAr {
   color: #d0af50;
   cursor: pointer;
 }
-body footer {
+body footer div.rowLast {
   position: relative;
-  top: 2630px;
-  padding: 30px 0 20px 0;
+  top: 120px;
   border-top: 1px solid #b9b8bd;
-}
-body footer p {
-  color: #b9b8bd;
+  padding-top: 30px;
 }
 .invis {
   display: none;
@@ -510,17 +519,10 @@ button[type="submit"]#but1:hover {
   border: 1px solid #b9b8bd;
   border-radius: 25px;
 }
-.bottomForm > label {
-  top: 10px;
+.bottomForm > input {
   font-size: 1.3em;
   font-weight: 100;
-  padding: 0;
-  left: 15px;
-  color: rgba(74, 79, 85, 0.65);
-  position: relative;
-}
-.bottomForm > input {
-  margin-top: 5px;
+  margin-top: 10px;
   width: 50%;
   margin-left: 20px;
 }
@@ -709,7 +711,7 @@ div.transp3 {
     display: none;
   }
   body {
-    background: url(../../img/pic-1.PNG) center 50px, url(../../img/map.png) center 4560px, url(../../img/fon.png) center 1254px;
+    background: url(../../img/pic-1.PNG) center 50px, url(../../img/fon.png) center 1254px;
     background-repeat: no-repeat;
   }
   body .container div.rowFirst nav {
@@ -904,30 +906,26 @@ div.transp3 {
   body .rowTwelv {
     top: 1490px!important;
   }
-  body .rowMap {
-    position: relative;
-    top: 1540px;
+  body footer {
+    top: 1540px!important;
   }
-  body .rowMap img {
-    max-width: 100%;
+  body footer .rowThirteen {
+    top: 30px!important;
   }
-  body .rowThirteen {
-    top: 1560px!important;
-  }
-  body .rowThirteen div.buttomLogo > a {
+  body footer .rowThirteen div.buttomLogo > a {
     background: url(../../img/pic-4.png) top center no-repeat transparent !important;
     background-size: contain !important;
     min-height: 100px!important;
   }
-  body .rowThirteen div > p.text-right {
+  body footer .rowThirteen div > p.text-right {
     text-align: center!important;
   }
-  body .rowThirteen div.bottomForm {
+  body footer .rowThirteen div.bottomForm {
     float: none!important;
     margin: 0 auto;
   }
-  body footer {
-    top: 1590px!important;
+  body footer .rowLast {
+    top: 70px!important;
   }
   .phoneAndLang > div.pull-left:nth-of-type(1) {
     width: 70%;
@@ -1055,26 +1053,22 @@ div.transp3 {
   html > body .rowTwelv {
     top: 1000px!important;
   }
-  html > body .rowMap {
-    position: relative;
-    top: 1050px;
+  html > body footer {
+    top: 1050px!important;
   }
-  html > body .rowMap img {
-    max-width: 100%;
+  html > body footer .rowThirteen {
+    top: 40px!important;
   }
-  html > body .rowThirteen {
-    top: 1070px!important;
-  }
-  html > body .rowThirteen div.buttomLogo > a {
+  html > body footer .rowThirteen div.buttomLogo > a {
     background: url(../../img/pic-4.png) top center no-repeat transparent !important;
     background-size: cover !important;
     min-height: 60px!important;
   }
-  html > body .rowThirteen p.text-right {
+  html > body footer .rowThirteen p.text-right {
     text-align: center!important;
   }
-  html > body footer {
-    top: 1110px!important;
+  html > body footer .rowLast {
+    top: 80px!important;
   }
   .phoneAndLang > div.pull-left:nth-of-type(1) {
     width: 70%!important;
